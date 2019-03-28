@@ -5,10 +5,10 @@ scriptDir=`dirname ${scriptName}`
 echo ${scriptDir}
 
 ${scriptDir}/git-use-faqdev-bitbucket.sh
-git push
+git push -f
 
 ${scriptDir}/git-use-faqdev-github.sh
-git push
+git push -f
 
 ${scriptDir}/git-use-faqdev-gitlab.sh
-git push
+git push -f

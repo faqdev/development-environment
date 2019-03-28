@@ -12,7 +12,8 @@ for branchName in `git branch | grep -v '* master'`; do
     echo "==== ${branchName}"
     git checkout ${branchName}
     git rebase ${prevBranch}
-    git push -f
+    git push -f --set-upstream origin ${branchName}
+    ./scripts/git-save-repo-to-faqdev.sh
     prevBranch="${branchName}"
 done
 
