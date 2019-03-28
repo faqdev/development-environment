@@ -4,4 +4,4 @@
 
 ## License ##
 
-Please read [here](LICENSE)
+Read [here](LICENSE)
