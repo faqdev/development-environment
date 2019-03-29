@@ -57,6 +57,11 @@ Vagrant.configure("2") do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
+
+    config.vm.provider "virtualbox" do |vb|
+      vb.name = "development-environment"
+    end
+
   # config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
