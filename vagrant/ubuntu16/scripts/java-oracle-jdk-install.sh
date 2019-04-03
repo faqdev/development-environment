@@ -5,7 +5,7 @@ echo "==== number of JDK files"
 echo ${numberOfJdkFiles}
 
 if [ "${numberOfJdkFiles}" != "1" ]; then
-    echo "Please leave only one JDK file in /vagrant/downloads folder"
+    echo "Please put only one JDK *.deb file to /vagrant/downloads folder"
     exit 1
 fi
 
@@ -14,7 +14,7 @@ echo "==== number of installed JDKs"
 echo ${numberOfInstalledJdks}
 
 if [ "${numberOfInstalledJdks}" != "0" ]; then
-    echo "The ${numberOfInstalledJdks} installed JDK(s) found. Please remove."
+    echo "The ${numberOfInstalledJdks} installed JDK(s) found. Please recreate VM"
     exit 1
 fi
 
