@@ -3,3 +3,4 @@
 *.log
 .ssh
 vagrant/ubuntu16/mysql-server-password.txt
+downloads
