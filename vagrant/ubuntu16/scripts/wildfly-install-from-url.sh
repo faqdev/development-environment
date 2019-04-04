@@ -26,7 +26,7 @@ echo "${wildflyDirName}"
 sudo mv ${wildflyDirName} wildfly
 
 echo "==== Copy wildfly script"
-sudo cp /vagrant/vagrant/ubuntu16/fs/programs/wildfly/bin/launch.sh /programs/wildfly/bin/launch.sh
+sudo cp /vagrant/vagrant/ubuntu16/fs/programs/wildfly/bin/launch.sh ${installationPath}/wildfly/bin/launch.sh
 
 echo "==== Copy wildfly default config"
 sudo cp /vagrant/vagrant/ubuntu16/fs/etc/default/wildfly /etc/default/wildfly
