@@ -43,3 +43,8 @@ echo -n ${javacPath} >> ${envFilePath}
 echo '"' >> ${envFilePath}
 cat ${envFilePath}
 sudo cp ${envFilePath} /etc/environment
+
+echo "==== add /usr/lib/jvm/default-jdk link"
+jdkName=`ls -1 /usr/lib/jvm | grep '^jdk'`
+jdkPath="/usr/lib/jvm/${jdkName}"
+sudo ln -s ${jdkPath} /usr/lib/jvm/default-jdk
