@@ -1,0 +1,8 @@
+JAVA="/usr/lib/jvm/default-jdk/bin/java"
+JAVA_HOME="/usr/lib/jvm/default-jdk"
+WILDFLY_USER="wildfly"
+STARTUP_WAIT=180
+SHUTDOWN_WAIT=30
+WILDFLY_CONFIG=standalone.xml
+WILDFLY_MODE=standalone
+WILDFLY_BIND=0.0.0.0
