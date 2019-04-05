@@ -14,5 +14,8 @@ sudo apt-get install -y --allow-unauthenticated php7.2-zip
 sudo apt-get install -y --allow-unauthenticated php7.2-mbstring
 sudo apt-get install -y --allow-unauthenticated php7.2-dom
 
+# For Symfony
+sudo apt-get install -y --allow-unauthenticated php7.2-curl
+
 # MySQL support:
 # sudo apt-get install -y --allow-unauthenticated php7.2-mysql
