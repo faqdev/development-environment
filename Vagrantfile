@@ -30,6 +30,7 @@ Vagrant.configure("2") do |config|
     config.vm.network "forwarded_port", guest: 3306, host: 3306 # [faqdev] Databases: MySQL server
     config.vm.network "forwarded_port", guest: 4200, host: 4200 # [faqdev] Frontend: Angular
     config.vm.network "forwarded_port", guest: 5432, host: 5432 # [faqdev] Databases: PostgreSQL server
+    config.vm.network "forwarded_port", guest: 8000, host: 8000 # [faqdev] Laravel/Symfony development port
     config.vm.network "forwarded_port", guest: 8080, host: 8080 # [faqdev] Backend: Tomcat, Wildfly
     config.vm.network "forwarded_port", guest: 9990, host: 9990 # [faqdev] Backend: Wildfly admin/management port
     config.vm.network "forwarded_port", guest: 27017, host: 27017 # [faqdev] Databases: MongoDB server
